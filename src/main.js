@@ -9,6 +9,10 @@ Vue.config.productionTip = false
 Vue.use(Tooltip)
 // Vue.use(Col)
 
+
+// Vue.prototype.viewer = undefined;
+// Vue.prototype.scene = undefined;
+
 new Vue({
   store,
   render: h => h(App)

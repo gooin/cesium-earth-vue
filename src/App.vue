@@ -59,7 +59,7 @@
         display: flex;
         justify-content: flex-end;
         height: 100%;
-        width:100%
+        width:calc(100% - 56px);
     }
 
     .container {
