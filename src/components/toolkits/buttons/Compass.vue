@@ -1,7 +1,7 @@
 <template>
     <!--    <div id="compass" style="transform: rotate(8.25158deg)">-->
     <div id="compass" v-bind:style="{ transform: this.rotateAngle }">
-        <img src="../../assets/compass.png" alt="" @click="resetHeading">
+        <img src="../../../assets/compass.png" alt="" @click="resetHeading">
     </div>
 </template>
 
@@ -76,8 +76,8 @@
 <style scoped>
     #compass {
         position: fixed;
-        right: 7.7rem;
-        bottom: 2em;
+        right: 8rem;
+        bottom: 1.75rem;
         z-index: 31;
         width: 2.5rem;
         height: 2.5rem;
