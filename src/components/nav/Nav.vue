@@ -24,13 +24,13 @@ export default {
   data() {
     return {
       nav: [
-        { text: "菜单", img: require("../../assets/menu.png") },
-        { text: "搜索", img: require("../../assets/search.png") },
-        { text: "探索者", img: require("../../assets/explore.png") },
-        { text: "手气不错", img: require("../../assets/lucky.png") },
-        { text: "我的地点", img: require("../../assets/bookmark.png") },
-        { text: "分享", img: require("../../assets/share.png") },
-        { text: "测量距离和面积", img: require("../../assets/measure.png") }
+        { text: this.$t('tooltips.nav.menu'), img: require("../../assets/menu.png") },
+        { text: this.$t('tooltips.nav.search'), img: require("../../assets/search.png") },
+        { text: this.$t('tooltips.nav.explore'), img: require("../../assets/explore.png") },
+        { text: this.$t('tooltips.nav.lucky'), img: require("../../assets/lucky.png") },
+        { text: this.$t('tooltips.nav.bookmark'), img: require("../../assets/bookmark.png") },
+        { text: this.$t('tooltips.nav.share'), img: require("../../assets/share.png") },
+        { text: this.$t('tooltips.nav.measure'), img: require("../../assets/measure.png") }
       ],
       navIsShow: {
         menu: false,
