@@ -1,0 +1,40 @@
+{
+  "message": {
+    "hello": "我"
+  },
+  "nav": {
+    "main": {
+    }
+  },
+  "tooltips": {
+    "nav": {
+      "menu": "菜单",
+      "search": "搜索",
+      "explore": "探索者",
+      "lucky": "手气不错",
+      "bookmark": "我的地点",
+      "share": "分享",
+      "measure": "测量距离和面积"
+    },
+    "status": {
+      "lon": "_经度：",
+      "lat": "_纬度：",
+      "camHeight": "_相机：",
+      "alt": "_海拔："
+    },
+    "btn": {
+      "zoomin": "缩小",
+      "zoomout": "放大",
+      "3d": "倾斜视图",
+      "compass": "点击一下可重置视图，双击可切换全球视图",
+      "open_street_view": "选择或拖放街景小人即可进入街景",
+      "exit_street_view": "退出街景",
+      "my_position": "飞往您的位置",
+      "nav": "点击可缩放到太空，双击或拖动某个地点可飞往该地点"
+    },
+    "unit": {
+      "km": "千米",
+      "m": "米"
+    }
+  }
+}
