@@ -9,6 +9,9 @@
 
 <script>
     import {clearInterval, setInterval} from "timers";
+    // import {mapActions} from 'vuex'
+    // 将 lon lat camheight alt 放到vuex中供其他组件使用,
+    // 不适合： 因为Cesium已经有了，vuex只适合操作dom及其他，Cesium 原生数据不适合vuex
 
     export default {
         name: "MapStatusBar",
@@ -29,6 +32,7 @@
             // this.showCamHeight();
         },
         methods: {
+            // ...mapActions(["updateCamera"]),
             waitViewerInit() {
                 let wait = setInterval(() => {
                     if (typeof viewer === undefined) {
@@ -109,7 +113,7 @@
                     //==================================
 
                     let cameraHeight = viewer.camera.positionCartographic.height;
-                    it.camHeightNum = viewer.camera.positionCartographic.height;
+                    it.camHeightNum = cameraHeight;
                     // console.log(cameraHeight)
                     if (cameraHeight < 10000) {
                         it.camHeight = it.$t('tooltips.status.camHeight') + parseFloat(cameraHeight).toFixed(0) + it.$t('tooltips.unit.m');

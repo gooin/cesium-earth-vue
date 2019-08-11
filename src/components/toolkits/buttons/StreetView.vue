@@ -1,13 +1,16 @@
 <template>
     <div id="street">
     <!--        <img src="../../../assets/gps_not_fixed.png" alt="">-->
-    <h5>S</h5>
+    <h5>{{ $t('message.hello') }}</h5>
 </div>
 </template>
 
 <script>
     export default {
-        name: "StreetView"
+        name: "StreetView",
+        mounted() {
+            // i18n.locale = 'en'
+        }
     }
 </script>
 
